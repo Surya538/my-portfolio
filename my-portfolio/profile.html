@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile information of SURYA Y.">
+    <title>SURYA Y | Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary navigation">
+            <div class="brand">
+                <a class="brand-mark active-mark" href="profile.html" aria-label="Open profile information">SY</a>
+                <span class="brand-name">SURYA Y</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="education.html">Education</a>
+                <a href="internships.html">Internships</a>
+                <a href="achievements.html">Achievements</a>
+                <a href="certificates.html">Certificates</a>
+                <a href="courses.html">Courses</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero compact-hero">
+            <div class="wrap">
+                <p class="eyebrow">Profile information</p>
+                <h1 id="heroName">SURYA Y</h1>
+                <p id="heroSummary">Fullstack developer profile, contact links, and quick details.</p>
+            </div>
+        </section>
+
+        <section class="section compact-profile-section">
+            <div class="wrap profile-shell">
+                <aside class="profile-preview card featured">
+                    <div class="profile-avatar-wrap">
+                        <img id="profilePhoto" class="profile-avatar" src="https://github.com/Surya538.png" alt="SURYA Y profile photo">
+                    </div>
+                    <span class="profile-badge">Open to opportunities</span>
+                    <h2 id="viewName">SURYA Y</h2>
+                    <p id="viewRole">Fullstack Developer | Software Developer</p>
+                    <div class="profile-mini-stats" aria-label="Profile highlights">
+                        <span><strong>4</strong>Internships</span>
+                        <span><strong>2</strong>Projects</span>
+                        <span><strong>15+</strong>Skills</span>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="button" id="editButton" type="button">Edit Profile</button>
+                        <a class="button light" href="Surya Y Resume.pdf" target="_blank" rel="noreferrer">Open Resume</a>
+                    </div>
+                </aside>
+
+                <section class="card profile-info-card" aria-label="Profile details">
+                    <div class="profile-toolbar">
+                        <div>
+                            <p class="eyebrow">View profile</p>
+                            <h2>Personal details</h2>
+                        </div>
+                        <span id="profileStatus" class="status-pill">Saved in this browser</span>
+                    </div>
+
+                    <div id="viewPanel" class="profile-detail-grid">
+                        <div class="profile-detail">
+                            <span>🎯 Role target</span>
+                            <strong id="viewTarget">Fullstack Developer / Software Developer</strong>
+                        </div>
+                        <div class="profile-detail">
+                            <span>🎓 Education</span>
+                            <strong id="viewEducation">Bachelor of Information Technology, PPG Institution of Technology, 2023 - 2027, Score: 6.67%</strong>
+                        </div>
+                        <div class="profile-detail">
+                            <span>📍 Location</span>
+                            <strong id="viewLocation">Coimbatore, Tamil Nadu, India</strong>
+                        </div>
+                        <div class="profile-detail">
+                            <span>☎ Phone</span>
+                            <strong><a id="viewPhone" href="tel:+918015067486">+91 8015067486</a></strong>
+                        </div>
+                        <div class="profile-detail">
+                            <span>🔗 LinkedIn</span>
+                            <strong><a id="viewLinkedin" href="https://www.linkedin.com/in/y-surya-b88714271" target="_blank" rel="noreferrer">linkedin.com/in/y-surya-b88714271</a></strong>
+                        </div>
+                        <div class="profile-detail">
+                            <span>⌘ GitHub</span>
+                            <strong><a id="viewGithub" href="https://github.com/Surya538" target="_blank" rel="noreferrer">github.com/Surya538</a></strong>
+                        </div>
+                    </div>
+
+                    <form id="editPanel" class="profile-form" hidden>
+                        <label>
+                            Full name
+                            <input id="nameInput" name="name" type="text" autocomplete="name">
+                        </label>
+                        <label>
+                            Role
+                            <input id="roleInput" name="role" type="text">
+                        </label>
+                        <label>
+                            Career summary
+                            <textarea id="summaryInput" name="summary" rows="4"></textarea>
+                        </label>
+                        <label>
+                            Role target
+                            <input id="targetInput" name="target" type="text">
+                        </label>
+                        <label>
+                            Education
+                            <input id="educationInput" name="education" type="text">
+                        </label>
+                        <label>
+                            Location
+                            <input id="locationInput" name="location" type="text">
+                        </label>
+                        <label>
+                            Phone
+                            <input id="phoneInput" name="phone" type="tel">
+                        </label>
+                        <label>
+                            LinkedIn URL
+                            <input id="linkedinInput" name="linkedin" type="url">
+                        </label>
+                        <label>
+                            GitHub URL
+                            <input id="githubInput" name="github" type="url">
+                        </label>
+                        <label>
+                            Edit profile photo
+                            <input id="photoInput" name="photo" type="file" accept="image/*">
+                        </label>
+                        <div class="profile-actions">
+                            <button class="button" type="submit">Submit</button>
+                            <button class="button light" id="cancelButton" type="button">Cancel</button>
+                            <button class="button light" id="resetButton" type="button">Reset Profile</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-contact">
+        <span>Contact: </span>
+        <a href="https://www.linkedin.com/in/y-surya-b88714271" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span> | </span>
+        <a href="https://github.com/Surya538" target="_blank" rel="noreferrer">GitHub</a>
+        <span> | </span>
+        <a href="tel:+918015067486">+91 8015067486</a>
+        <span> | </span>
+        <a href="Surya Y Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </footer>
+
+    <script>
+        const defaultProfile = {
+            name: "SURYA Y",
+            role: "Fullstack Developer | Software Developer",
+            summary: "Fullstack developer profile, contact links, and quick details.",
+            target: "Fullstack Developer / Software Developer",
+            education: "Bachelor of Information Technology, PPG Institution of Technology, 2023 - 2027, Score: 6.67%",
+            location: "Coimbatore, Tamil Nadu, India",
+            phone: "+91 8015067486",
+            linkedin: "https://www.linkedin.com/in/y-surya-b88714271",
+            github: "https://github.com/Surya538",
+            photo: "https://github.com/Surya538.png"
+        };
+
+        const storageKey = "suryaProfile";
+        const fields = ["name", "role", "summary", "target", "education", "location", "phone", "linkedin", "github"];
+        const viewPanel = document.getElementById("viewPanel");
+        const editPanel = document.getElementById("editPanel");
+        const statusText = document.getElementById("profileStatus");
+        const photoInput = document.getElementById("photoInput");
+
+        function loadProfile() {
+            const saved = localStorage.getItem(storageKey);
+            return saved ? { ...defaultProfile, ...JSON.parse(saved) } : defaultProfile;
+        }
+
+        function cleanPhone(phone) {
+            return phone.replace(/[^\d+]/g, "");
+        }
+
+        function shortUrl(url) {
+            return url.replace(/^https?:\/\//, "").replace(/\/$/, "");
+        }
+
+        function setProfile(profile) {
+            document.getElementById("heroName").textContent = profile.name;
+            document.getElementById("heroSummary").textContent = profile.summary;
+            document.getElementById("profilePhoto").src = profile.photo;
+            document.getElementById("viewName").textContent = profile.name;
+            document.getElementById("viewRole").textContent = profile.role;
+            document.getElementById("viewTarget").textContent = profile.target;
+            document.getElementById("viewEducation").textContent = profile.education;
+            document.getElementById("viewLocation").textContent = profile.location;
+            document.getElementById("viewPhone").textContent = profile.phone;
+            document.getElementById("viewPhone").href = `tel:${cleanPhone(profile.phone)}`;
+            document.getElementById("viewLinkedin").textContent = shortUrl(profile.linkedin);
+            document.getElementById("viewLinkedin").href = profile.linkedin;
+            document.getElementById("viewGithub").textContent = shortUrl(profile.github);
+            document.getElementById("viewGithub").href = profile.github;
+
+            fields.forEach((field) => {
+                document.getElementById(`${field}Input`).value = profile[field];
+            });
+        }
+
+        function showEditMode(isEditing) {
+            viewPanel.hidden = isEditing;
+            editPanel.hidden = !isEditing;
+            statusText.textContent = isEditing ? "Editing profile" : "Saved in this browser";
+        }
+
+        let currentProfile = loadProfile();
+        setProfile(currentProfile);
+
+        document.getElementById("editButton").addEventListener("click", () => {
+            setProfile(currentProfile);
+            showEditMode(true);
+        });
+
+        document.getElementById("cancelButton").addEventListener("click", () => {
+            setProfile(currentProfile);
+            showEditMode(false);
+        });
+
+        document.getElementById("resetButton").addEventListener("click", () => {
+            localStorage.removeItem(storageKey);
+            currentProfile = defaultProfile;
+            photoInput.value = "";
+            setProfile(currentProfile);
+            showEditMode(false);
+        });
+
+        photoInput.addEventListener("change", () => {
+            const file = photoInput.files[0];
+            if (!file) {
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.addEventListener("load", () => {
+                currentProfile = { ...currentProfile, photo: reader.result };
+                document.getElementById("profilePhoto").src = reader.result;
+            });
+            reader.readAsDataURL(file);
+        });
+
+        editPanel.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const updatedProfile = { ...currentProfile };
+            fields.forEach((field) => {
+                updatedProfile[field] = document.getElementById(`${field}Input`).value.trim();
+            });
+            currentProfile = updatedProfile;
+            localStorage.setItem(storageKey, JSON.stringify(currentProfile));
+            setProfile(currentProfile);
+            showEditMode(false);
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
